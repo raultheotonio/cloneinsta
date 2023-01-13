@@ -6,8 +6,6 @@ import { name as appName } from "./app.json";
 import storeConfig from "./src/store";
 import axios from "axios";
 
-axios.defaults.baseURL = "#";
-
 const store = storeConfig();
 
 const Redux = () => (

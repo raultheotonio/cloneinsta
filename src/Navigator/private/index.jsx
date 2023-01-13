@@ -6,7 +6,6 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import Feed from "../../screens/Feed";
 import AddPhoto from "../../screens/AddPhoto";
 import Profile from "../../screens/Profile";
-import { OtherComponent } from "../../OtherComponent";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -18,10 +17,10 @@ const screenOptions = ({ route }) => ({
       case "Feed":
         iconName = "home";
         break;
-      case "AddPhoto":
+      case "Foto":
         iconName = "camera";
         break;
-      case "Profile":
+      case "Perfil":
         iconName = "user";
         break;
       default:
@@ -64,7 +63,6 @@ const PrivateNavigation = () => (
       name="Home"
       component={Home}
     />
-    <Stack.Screen name="OtherComponent" component={OtherComponent} />
   </Stack.Navigator>
 );
 
